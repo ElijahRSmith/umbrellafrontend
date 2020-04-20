@@ -1,6 +1,6 @@
 export default chanceOfAnyRain;
 
-const proxyURL = 'http://localhost:3001'
+const proxyURL = 'https://umbrellaserver.herokuapp.com'
 
 
 async function chanceOfAnyRain(places) {
