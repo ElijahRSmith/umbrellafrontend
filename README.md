@@ -1,9 +1,9 @@
 # umbrellafrontend
 
 The purpose of this app is to tell a user whether or not to bring an umbrella to any of their
-outdoor activities withing the next 24 hours. A user inputs the highest rain probability they
+outdoor activities within the next 24 hours. A user inputs the highest rain probability they
 are willing to tolerate without an umbrella, as well as all the places and times (up to 4)
-that they will be outside
+that they will be outside.
 
 The app processes the locations and times and then returns the average chance it will 
 rain in any of those locations during any of those times. It does this by first querying
