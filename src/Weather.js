@@ -61,7 +61,7 @@ function getLocation(city, state) {
     })
 }
 
-function selectForecasts(data, from, to) {
+export function selectForecasts(data, from, to) {
 
     let chosenForecasts = [];
     let hour;
@@ -76,7 +76,7 @@ function selectForecasts(data, from, to) {
     return chosenForecasts;
 }
 
-function fixZone(value) { // Weather server timezone is 4 hours ahead.
+export function fixZone(value) { // Weather server timezone is 4 hours ahead.
     if (value - 4 < 0) {
         return value + 20;
     } else {
@@ -84,16 +84,15 @@ function fixZone(value) { // Weather server timezone is 4 hours ahead.
     }
 }
 
-function averagePrecip(forecasts) {
+export function averagePrecip(forecasts) {
     let total = 0;
     for (let i = 0; i < forecasts.length; i++) {
         total += forecasts[i].precipitationProbability;
     }
-
     return total / forecasts.length;
 }
 
-function fmtTime(value) {
+ export function fmtTime(value) {
     let hour = value.slice(0,2);
     return parseInt(hour);
 }
